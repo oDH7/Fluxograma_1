@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function faca() {
+        var usuario;
+        var senha;
+        var recorrente;
+       
+
+        recorrente = true;
+        do {
+            window.alert("Digite seu usuário");
+            usuario = window.prompt('Enter a value for usuario');
+            if (usuario == "Lacerdelas") {
+                window.alert("Digite sua senha");
+                senha = window.prompt('Enter a value for senha');
+                if (senha == "1234") {
+                    window.alert("Login aprovado");
+                    recorrente = false;
+                } else {
+                    window.alert("Senha incorreta");
+                }
+            } else {
+                window.alert("Usuário incorreto");
+            }
+        } while (recorrente == true);
+    }
+    function enquanto() {
+        var usuario;
+        var senha;
+        var recorrente;
+        
+
+        recorrente = true;
+        while (recorrente == true) {
+            window.alert("Digite seu usuário");
+            usuario = window.prompt('Enter a value for usuario');
+            if (usuario == "Lacerdelas") {
+                window.alert("Digite sua senha");
+                senha = window.prompt('Enter a value for senha');
+                if (senha == "1234") {
+                    window.alert("Login aprovado");
+                    recorrente = false;
+                } else {
+                    window.alert("Senha incorreta");
+                }
+            } else {
+                window.alert("Usuário incorreto");
+            }
+        }
+    }
+</script>
+
+
+<body>
+    <button onclick="faca()">Login Faça</button>
+    <button onclick="enquanto()">Login Enquanto</button>
+
+</body>
+
+</html>
